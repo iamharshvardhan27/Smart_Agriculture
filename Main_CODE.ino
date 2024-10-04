@@ -138,7 +138,7 @@ solar_cell = (analogRead(A1) * (5.001 / 1023.001));
 
 
    // Serial.print(moisture_percentage);
-  if (moisture_percentage >= 35.00) {
+  if (moisture_percentage >= 50.00) {
     digitalWrite(8, HIGH);
     digitalWrite(4, HIGH);
     digitalWrite(3, LOW);
@@ -227,6 +227,26 @@ solar_cell = (analogRead(A1) * (5.001 / 1023.001));
        digitalWrite(2, LOW);   // turn the LED on (HIGH is the voltage level)
       // delay(1000);                       // wait for a second
     }
+
+  Serial.print(t);
+  Serial.print(",");
+  Serial.print(h);
+  Serial.print(",");
+  Serial.print(moisture_percentage);
+  Serial.print(",");
+  Serial.print(lux);
+  Serial.print(",");
+  Serial.print(value);
+  Serial.print(",");
+  Serial.print(solar_cell);
+  Serial.print(",");
+  Serial.print(tdsValue);
+  Serial.print(",");
+  Serial.println(FREQUENCY);
+  
+
+
+
 }
     // delay(1000);//Wait 5 seconds before accessing sensor again.
 
