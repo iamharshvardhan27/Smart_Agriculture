@@ -34,7 +34,7 @@ Our **IoT-based Smart Agriculture System** monitors key environmental parameters
    - lcd display
     
 - **Software**:
-   - Programming languages: C++ (Arduino/ESP32)
+   - Programming languages: C++ (Arduino and ESP8266)
    - Cloud Platform: Thingspeak for data storage and visualization.
    - local data storage: MS Excel
   
